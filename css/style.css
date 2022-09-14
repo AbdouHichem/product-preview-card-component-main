@@ -126,6 +126,10 @@ body {
 }
 
 @media only screen and (min-width: 680px) {
+  body {
+    -webkit-transition: all 2;
+    transition: all 2;
+  }
   .card {
     width: 85%;
     max-width: 600px;
