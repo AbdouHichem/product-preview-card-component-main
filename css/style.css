@@ -17,7 +17,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
+  min-height: 120vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -32,9 +32,13 @@ body {
   background-color: white;
 }
 
-.card .cardImage img {
+.card .cardImage {
   width: 100%;
+  height: 250px;
   border-radius: 1em 1em 0em 0em;
+  background-image: url(../images/image-product-mobile.jpg);
+  background-repeat: no-repeat no-repeat;
+  background-size: 100% 100%;
 }
 
 .card .cardContent {
@@ -119,5 +123,74 @@ body {
   width: 85%;
   max-width: 380px;
   margin-top: 1em;
+}
+
+@media only screen and (min-width: 680px) {
+  .card {
+    width: 85%;
+    max-width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .card .cardContent {
+    margin: 1em 0em 1em;
+  }
+  .card .cardImage {
+    width: 150%;
+    height: 450px;
+    border-radius: 1em 0em 0em 1em;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-repeat: no-repeat no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    max-width: 680px;
+  }
+  .card .cardImage {
+    width: 150%;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 20px;
+  }
+  .card {
+    max-width: 680px;
+  }
+  .card .cardImage {
+    width: 150%;
+    height: 600px;
+    max-height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  body {
+    font-size: 30px;
+  }
+  .card {
+    max-width: 1500px;
+  }
+  .card .cardImage {
+    width: 100%;
+    height: 800px;
+    max-height: 100%;
+  }
+  .card h1 {
+    font-size: 2.5em;
+  }
+  .card h3, .card .price, .card .originalprice, .card button, .card p {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
