@@ -15,7 +15,7 @@ body {
   max-width: 380px;
   border-radius: 1em;
   background-color: $White;
-
+  transition: all .5s ease-out;
   .cardImage {
     width: 100%;
     height: 250px;
@@ -80,6 +80,7 @@ body {
       font-size: 1em;
       color: $White;
       font-weight: bold;
+      transition: all 1s ease-out;
 
       &:hover {
         cursor: pointer;

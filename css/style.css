@@ -30,6 +30,8 @@ body {
   max-width: 380px;
   border-radius: 1em;
   background-color: white;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .card .cardImage {
@@ -108,6 +110,8 @@ body {
   font-size: 1em;
   color: white;
   font-weight: bold;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .card .cardContent button:hover {
