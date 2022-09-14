@@ -7,6 +7,7 @@ body {
   min-height: 120vh;
   flex-direction: column;
   background-color: $Cream;
+ 
 }
 
 .card {
@@ -101,18 +102,22 @@ body {
 }
 
 @media only screen and (min-width: 680px) {
-
+  body {
+    transition: all 2;
+  }
   .card {
     width: 85%;
     max-width: 600px;
     display: flex;
     flex-direction: row;
 
+
     .cardContent {
       margin: 1em 0em 1em;
     }
 
     .cardImage {
+      
       width: 150%;
       height: 450px;
       border-radius: 1em 0em 0em 1em;
@@ -125,7 +130,6 @@ body {
 }
 
 @media only screen and (min-width: 1024px) {
-
   .card {
     max-width: 680px;
 
@@ -156,6 +160,7 @@ body {
 @media only screen and (min-width: 1450px) {
   body {
     font-size: 30px;
+  
   }
 
   .card {
