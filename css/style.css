@@ -106,7 +106,18 @@ body {
   font-weight: bold;
 }
 
+.card .cardContent button:hover {
+  cursor: pointer;
+  background-color: #1c232b;
+}
+
 .card .cardContent button img {
   margin-right: 0.5em;
+}
+
+.attribution {
+  width: 85%;
+  max-width: 380px;
+  margin-top: 1em;
 }
 /*# sourceMappingURL=style.css.map */

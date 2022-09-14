@@ -78,9 +78,22 @@ body {
       color: $White;
       font-weight: bold;
 
+      &:hover {
+        cursor: pointer;
+        background-color: $Verydarkblue;
+        
+      }
+
       img {
         margin-right: 0.5em;
+
       }
     }
   }
+}
+
+.attribution {
+  width: 85%;
+  max-width: 380px;
+  margin-top: 1em;
 }
